@@ -30,12 +30,6 @@ export interface Track {
 export class DeezerService {
   constructor(private http: HttpClient) {}
 
-  // getArtists(artist: string): Promise<Artist[]> {
-  //   return this.http
-  //     .get(`https://api.deezer.com/search/artist/?q=${artist}`)
-  //     .toPromise();
-  // }
-
   getArtists(artist: string): Observable<Artist[]> {
     return this.http
       .get<any>(`https://api.deezer.com/search/artist/?q=${artist}`)
@@ -56,16 +50,4 @@ export class DeezerService {
       fans: artist.nb_fan
     }));
   }
-
-  // getAlbums(artist_id: number): Promise<Album[]> {
-  //   return this.http
-  //     .get<Album[]>(`${this.API_URL}/artist/${artist_id}/albums`)
-  //     .toPromise();
-  // }
-
-  // getTop5(artist_id: number): Promise<Track[]> {
-  //   return this.http
-  //     .get<Track[]>(`${this.API_URL}/artist/${artist_id}/top5`)
-  //     .toPromise();
-  // }
 }
