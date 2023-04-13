@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
       <p *ngIf="loadingArtists" class="white-text">Loading artists...</p>
-      <div class="col-sm-4 card-padding" *ngFor="let artist of artists">
+      <div class="col-sm-3 card-padding" *ngFor="let artist of artists">
         <mat-card class="card-content" (click)="onClickCard(artist)">
           <img mat-card-image [src]="artist.img" />
           <mat-card-title>{{ artist.name }}</mat-card-title>
