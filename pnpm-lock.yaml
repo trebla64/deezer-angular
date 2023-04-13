@@ -31,6 +31,9 @@ dependencies:
   '@angular/router':
     specifier: ^15.2.0
     version: 15.2.0(@angular/common@15.2.0)(@angular/core@15.2.0)(@angular/platform-browser@15.2.0)(rxjs@7.8.0)
+  bootstrap:
+    specifier: ^5.2.3
+    version: 5.2.3(@popperjs/core@2.11.7)
   rxjs:
     specifier: ~7.8.0
     version: 7.8.0
@@ -2795,6 +2798,10 @@ packages:
       - supports-color
     dev: true
 
+  /@popperjs/core@2.11.7:
+    resolution: {integrity: sha512-Cr4OjIkipTtcXKjAsm8agyleBuDHvxzeBoa1v543lbv1YaIwQjESsVcmjiWiPEbC1FIeHOG/Op9kdCmAmiS3Kw==}
+    dev: false
+
   /@schematics/angular@15.2.6:
     resolution: {integrity: sha512-OcBUvVAxZEMBX+fi0ytybeAdmStra+GwtlvipS70yOxcAgJ84ZrnZGN7a072cCVQcq7AgqUfssnyqCx1wu+yCg==}
     engines: {node: ^14.20.0 || ^16.13.0 || >=18.10.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
@@ -3432,6 +3439,14 @@ packages:
   /boolbase@1.0.0:
     resolution: {integrity: sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==}
     dev: true
+
+  /bootstrap@5.2.3(@popperjs/core@2.11.7):
+    resolution: {integrity: sha512-cEKPM+fwb3cT8NzQZYEu4HilJ3anCrWqh3CHAok1p9jXqMPsPTBhU25fBckEJHJ/p+tTxTFTsFQGM+gaHpi3QQ==}
+    peerDependencies:
+      '@popperjs/core': ^2.11.6
+    dependencies:
+      '@popperjs/core': 2.11.7
+    dev: false
 
   /brace-expansion@1.1.11:
     resolution: {integrity: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==}

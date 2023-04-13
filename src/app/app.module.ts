@@ -10,12 +10,21 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
 
 import { FormsModule } from '@angular/forms';
+import { ArtistDetailsComponent } from './artist-details/artist-details.component';
+import { ArtistsComponent } from './artists/artists.component';
+import { ThousandsFormatterPipe } from './thousands-formatter.pipe';
+
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ArtistDetailsComponent,
+    ArtistsComponent,
+    ThousandsFormatterPipe
   ],
   imports: [
     BrowserModule,
@@ -26,7 +35,9 @@ import { FormsModule } from '@angular/forms';
     MatSidenavModule,
     MatInputModule,
     FormsModule,
-    MatButtonModule
+    MatButtonModule,
+    MatCardModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
