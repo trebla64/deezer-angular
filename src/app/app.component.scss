@@ -1,0 +1,78 @@
+.companyName {
+    font-size: 150%;
+  }
+  
+  .mat-toolbar {
+    height: 7vh;
+  }
+  
+  div {
+    overflow: inherit;
+  }
+  
+  .mat-sidenav-container {
+    background-color: #303030;
+    min-height: 93vh !important;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 110%;
+    white-space: normal;
+  }
+  
+  button {
+    font-size: 110%;
+    min-width: min-content;
+  }
+  
+  .example-icon {
+    padding: 0 14px;
+  }
+  
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+  
+  .mat-sidenav-content {
+    font-size: 200%;
+    text-align: center;
+  }
+  
+  .example-toolbar {
+    color: white;
+    background-color: #4153af;
+    height: 116px;
+  }
+  
+  .card-padding {
+    padding-top: 0px;
+    padding-bottom: 25px;
+  }
+  
+  .card-content {
+    color: white;
+    background-color: #424242;
+    text-align: left;
+  }
+  
+  .example-content {
+    padding-top: 125px;
+    padding-left: 22%;
+    padding-right: 22%;
+  }
+  
+  .search-box {
+    background-color: #5d6dbb;
+    outline: none;
+  }
+  
+  input {
+    padding: 4px;
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    border: 0px solid #eee; /* Here */
+    border-radius: 10px;
+    color: white;
+  }
+  
