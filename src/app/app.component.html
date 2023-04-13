@@ -1,24 +1,26 @@
 <div>
   <mat-toolbar class="example-toolbar mat-elevation-z5">
     <div>
-      <button
+      <!-- <button
         mat-icon-button
         color="white"
         aria-label="Example icon button with a menu icon"
         (click)="sidenav.toggle()"
       >
         <mat-icon>menu</mat-icon>
-      </button>
+      </button> -->
     </div>
 
-    <input
-      matInput
-      class="search-box"
-      type="text"
-      (keyup.enter)="onEnter()"
-      [(ngModel)]="searchValue"
-      placeholder="Search..."
-    />
+    <div class="container">
+      <input
+        matInput
+        class="search-box"
+        type="text"
+        (keyup.enter)="onEnter()"
+        [(ngModel)]="searchValue"
+        placeholder="Search..."
+      />
+    </div>
     <span class="example-spacer"></span>
   </mat-toolbar>
   <mat-sidenav-container class="example-container">
